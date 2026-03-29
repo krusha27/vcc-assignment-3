@@ -1,0 +1,25 @@
+{
+  "name": "scaling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "app": "ts-node app.ts",
+    "monitor": "ts-node script.ts",
+    "start": "concurrently \"npm run app\" \"npm run monitor\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/compute": "^6.9.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "concurrently": "^9.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
